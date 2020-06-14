@@ -14,7 +14,6 @@
 def solution1(A):
     occurrence = [False] * (len(A) + 1)
     for item in A:
-        print('item: ', item)
         if 1 <= item <= len(A) + 1:
             occurrence[item - 1] = True
     for index in range(len(A) + 1):      
