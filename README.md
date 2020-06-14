@@ -3,14 +3,14 @@
 This repository presents possible approches to deal with codility problems with 100% correctness in python language includes lessons like:
 
 * **Iterations**
-  * BinaryGap ~ ***2 solutions***
+  * BinaryGap
 * **Arrays**
-  * CyclicRotation ~ ***3 solutions***
-  * OddOccurrencesInArray ~ ***3 solutions***
+  * CyclicRotation
+  * OddOccurrencesInArray
 * **Time Complexity**
-  * FrogJmp ~ ***3 solutions***
+  * FrogJmp
 * **Counting Elements**
-  * MissingInteger ~ ***3 solutions***
+  * MissingInteger
 
 ## Have other solutions ?
 If You see new approach which wasn't presented in this repository please contact me on ***m.semeniuk@icloud.com***
