@@ -2,7 +2,7 @@
 
 This repository presents possible approches to deal with codility problems with 100% correctness in python language includes lessons like:
 
-* **Iterations**
+* ##**Iterations**
   * BinaryGap ~ ***2 solutions***
 * **Arrays**
   * CyclicRotation ~ ***3 solutions***
