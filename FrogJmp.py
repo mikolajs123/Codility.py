@@ -31,3 +31,12 @@ def solution1(X, Y, D):
         return p // D
     else:
         return (p // D) + 1
+
+import math
+
+def solution2(X, Y, D):
+    distance = (Y - X) / D
+    return math.ceil(distance)
+
+def solution3(X, Y, D):
+    return (X - Y + (D - 1)) / D
