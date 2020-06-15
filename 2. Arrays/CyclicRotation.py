@@ -29,6 +29,9 @@ def solution1(A, K):
     l = len(A)
     if l < 2:
         return A
+    N = K % l
+    if N == 0:
+        return A;
     for i in range(K):
         A.insert(0, A.pop(l - 1))
     return A
@@ -38,6 +41,9 @@ def solution2(A, K):
     l = len(A)
     if l < 2:
         return A
+    N = K % l
+    if N == 0:
+        return A;
     # declaring our array    
     res = [None] * l
     # rotate an list using modulo operator
@@ -47,7 +53,8 @@ def solution2(A, K):
     return res
   
 def solution3(A, K):
-    if len(A) == 0:
+    l = len(A)
+    if l < 2:
         return A
-    K = K % len(A)
+    K = K % l
     return A[-K:] + A[:-K]
