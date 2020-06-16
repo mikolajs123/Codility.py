@@ -50,3 +50,17 @@ def solution1(A):
         s -= i
         sums.append(abs(c - s))
     return min(sums)
+
+ from itertools import accumulate
+
+def solution2(A):
+    array_sum = sum(A)  # saving sum of all elements to have an O(n) complexity
+
+    # accumulate returns accumulated sums
+    # e.g. for input: [3, 1, 2, 4] it returns: [3, 4, 6, 10]
+    # we are passing a copy of the array without the last element
+    # including the last element doesn't make sense, becuase
+    # accumulate[A][-1] == array_sum
+    accumulated_list = accumulate(A[:-1])
+
+    return min([abs(2*x - array_sum) for x in accumulated_list])
